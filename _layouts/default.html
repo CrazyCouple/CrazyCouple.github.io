@@ -1,22 +1,23 @@
 <!DOCTYPE html>
  <html>
 	<head>
-		<title>CrazyCouple</title>			
-		<link rel='stylesheet' href='../css/bootstrap.min.css' type='text/css'>
-		<link rel='stylesheet' href='../css/Site.css' type='text/css'>
+		<title>CrazyCouple</title>
+		<link rel='stylesheet' href='{{ site.url }}/css/bootstrap.min.css' type='text/css'>
+		<link rel='stylesheet' href='{{ site.url }}/css/Site.css' type='text/css'>
+    <script src="{{ site.url }}/js/script.js"></script>
 	</head>
 	<body>
 	<div class = "col-lg-offset-2 col-lg-8">
-		<div class="navbar navbar-inverse navbar-static-top", style="margin-bottom: 0 !important;">
-			 <ul class="nav navbar-nav"> 
-				 <li><a href="#">About Us</a></li>
-				 <li><a href="#">Blog</a></li> 
-				 <li><a href="#">Development</a></li> 
-			 </ul>  			
-		</div> 
+		<div class="navbar navbar-inverse navbar-static-top">
+			 <ul class="nav navbar-nav">
+				 <li {% if page.title contains "About" %}class="active"{% endif %}><a href="{{ site.url }}/index.html">About Us</a></li>
+				 <li {% if page.title contains "Blog" %}class="active"{% endif %}><a href="{{ site.url }}/blog/">Blog</a></li>
+				 <li {% if page.title contains "Development" %}class="active"{% endif %}><a href="#">Development</a></li>
+			 </ul>
+		</div>
 		<div class ="content">
-			{{ content }}		
-		</div> 
-	</div>		
+			{{ content }}
+		</div>
+	</div>
 	</body>
 </html>

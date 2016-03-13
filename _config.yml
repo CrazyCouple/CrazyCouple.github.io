@@ -1,2 +1,10 @@
 name: Crazy Couple
 markdown: kramdown
+url: https://crazycouple.github.io/
+
+# Dependencies
+markdown:         rdiscount
+highlighter:         true
+
+# Permalinks
+permalink:        pretty
