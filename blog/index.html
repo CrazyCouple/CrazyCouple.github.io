@@ -3,17 +3,17 @@ layout: default
 title: Blog
 contentHeader: Our Posts
 ---
-<div class="inline-block" style="text-align:center;">
+<div class="inline-block">
   {% for post in site.posts %}
-  <span>
-    <div class="panel panel-primary" style="display:inline-block;width:275px; height:250px; margin-right:20px;">
-       <div class="panel-heading" style="background-color:white; color: #428bca; height:65px; width:270px;">
+  <span class="col-lg-4 col-md-6 col-sm-12 col-xs-12" style="display:inline-block;text-align:center;">
+    <div class="panel panel-primary" style="display:inline-block; height:250px; margin-left:1px;margin-right:1px;">
+       <div class="panel-heading" style="background-color:white; color: #428bca; height:65px; overflow:auto">
          <div class="panel-title" style="float:left">
            <a href="{{ post.url }}" style="font-weight:bold"> {{ post.contentHeader }}</a>
          </div>
          <div style="float:right">{{ post.author}}, {{ post.date | date_to_string }}</div>
         </div>
-       <div class="panel-body" style="background-color:white; color: #428bca; height:180px;width:270px;">
+       <div class="panel-body" style="background-color:white; color: #428bca; height:180px;">
          <div style="overflow-y:auto;height:140px;">{{ post.description }}</div>
          {% for tag in post.tags %}
          <p class="pull-right">&nbsp;</p>
