@@ -2,6 +2,7 @@ body{
   background: url('../resources/background.jpg') no-repeat;
   background-size:cover;
   height:100vh;
+  min-width: 500px;
 }
 .navbar-nav {
   width: 100%;
@@ -22,4 +23,5 @@ body{
   padding-bottom: 80px;
   padding-right: 80px;
   padding-left: 80px;
+  min-width: 450px;
 }
