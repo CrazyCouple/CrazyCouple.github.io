@@ -4,7 +4,7 @@ title: "Blog"
 date: 2012-10-13
 author: Myroslava
 contentHeader: "Header of my 4 post"
-description: "It is my first post during developing this site Well. Finally got around to putting this old website together. It is my first post during developing this site Well. Finally got around to putting this old website together. It is my first post during developing this site Well. Finally got around to putting this old website together. It is my first post during developing this site Well. Finally got around to putting this old website together."
+description: "It is my first post during developing this site Well. Finally got around to putting this old website together. It is my first post during developing this site Well. Finally got around to putting this old website together. It is my first post during developing this site Well."
 tags:
 - test
 - code
