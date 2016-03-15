@@ -11,7 +11,7 @@ contentHeader: Our Posts
          <div class="panel-title" style="width:100%; height:60%">
            <a href="{{ post.url }}" style="font-weight:bold;float:left;"> {{ post.contentHeader }}</a>
          </div>
-         <div style="float:right;">{{ post.author}}, {{ post.date | date_to_string }}</div>
+         <div style="float:right; font-size:12px">{{ post.author}}, {{ post.date | date_to_string }}</div>
         </div>
        <div class="panel-body" style="background-color:white; color: #428bca; height:180px;">
          <div style="overflow-y:auto;height:140px;">{{ post.description }}</div>
