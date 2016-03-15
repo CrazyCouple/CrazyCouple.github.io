@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Blog"
+contentHeader: "Header of my first post"
 date: 2016-03-13
 author: Myroslava
-header: "Header of my first post"
 description: "It is my first post during developing this site Well. Finally got around to putting this old website together. It is my first post during developing this site Well. Finally got around to putting this old website together."
 tags:
 - test
